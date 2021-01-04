@@ -1,0 +1,42 @@
+ul.ullist{
+  color: $site-clr-text-dark-sec;
+  @include responsive-font-size(1.1rem);
+
+  li{
+    position: relative;
+    padding-left: 15px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      left: 0;
+    }
+  }
+
+  p{
+    padding-left: 15px;
+  }
+
+  &-dotted{
+    li{
+      &::before{
+        width: 8px;
+        height: 8px;
+        background-color: $site-clr-green;
+        top: 8px;
+        left: 0;
+        @include border-radius(50%);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          top: 6px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          top: 5px;
+        }
+      }
+    }
+  }
+}

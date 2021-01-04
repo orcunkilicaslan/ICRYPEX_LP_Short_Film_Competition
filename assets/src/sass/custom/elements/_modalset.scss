@@ -1,0 +1,113 @@
+
+.modal{
+
+  &-content{}
+
+  &-close{
+    margin-bottom: $var-custom-modal-inner-padding;
+    position: relative;
+
+    > .close{
+      color: $site-clr-white;
+      background-color: $site-clr-blue;
+      width: 22px;
+      height: 22px;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: $var-custom-font-weight-normal;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      text-shadow: none;
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      @include translateX(-50%);
+      @include border-radius(50%);
+
+      span{
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+  &-header{
+    @include flexbox-justify-content(center);
+    background-color: $site-clr-darkblue-600;
+    position: relative;
+
+    > .close{
+      color: $site-clr-white;
+      background-color: $site-clr-darkblue-700;
+      width: 22px;
+      height: 22px;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: $var-custom-font-weight-normal;
+      border: 1px solid $site-brdr-dark;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      text-shadow: none;
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      @include translateY(-50%);
+      @include border-radius(50%);
+
+      span{
+        position: relative;
+        top: -3px;
+      }
+    }
+
+    .modal-title{
+      color: $site-clr-white;
+      @include responsive-font-size($var-custom-font-size-base);
+      font-weight: $var-custom-font-weight-bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &-body{
+    @include responsive-font-size($var-custom-font-size-base);
+  }
+
+  &-footer{
+    @include flexbox-justify-content(center);
+    padding-top: 0;
+
+    .btn{
+      min-width: 100px;
+    }
+  }
+
+  &-sm{}
+
+  &-open{}
+
+  &-maincont{
+
+    > div[class*="modal"]{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modal-content{
+      background-color: transparent;
+      border: none;
+    }
+
+    .modal-body,
+    .modal-footer{
+      padding: 0;
+    }
+
+    .modal-footer{
+      padding-top: $modal-inner-padding;
+    }
+
+  }
+
+}
