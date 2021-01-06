@@ -1,0 +1,98 @@
+
+.footer{
+  background-color: #2E313C;
+
+  &-copyright{
+    color: $site-clr-white;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    .footlogo{
+      margin-bottom: 20px;
+    }
+
+    .footcopy{
+      @include responsive-font-size(1rem);
+      line-height: 1.6;
+    }
+  }
+
+  &-navigasyon{
+    background-color: #24262F;
+    padding: 5px 0;
+
+    .navbar{
+      @include flexbox-justify-content(center);
+
+      .nav-item{
+        margin: 0 15px;
+      }
+    }
+  }
+
+  &-address{
+    color: $site-clr-white;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    .footaddr{
+      @include responsive-font-size(1rem);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .footcallcenter{
+      line-height: 1.2;
+
+      p{
+        @include responsive-font-size(1.625rem);
+        display: block;
+      }
+
+      a{
+        color: $site-clr-white;
+        @include responsive-font-size(1rem);
+      }
+    }
+
+    .footsocial{
+      margin-top: 40px;
+
+      .sociallist{
+        @include flexbox-display-flex();
+        @include flexbox-justify-content(center);
+
+        li{
+          background-color: $site-clr-cyan;
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+          @include border-radius(50%);
+
+          .socialicon{
+            width: 24px;
+            height: 24px;
+            background-image: url(#{$path-img-url-icons}/icons_spite_24_footer_social.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            display: block;
+            position: relative;
+            margin: 3px;
+            @include svg-filter(0%, 1, 0, 100%);
+
+            &.facebook{background-position: calc(-24px*0) 0;}
+            &.twitter{background-position: calc(-24px*1) 0;}
+            &.instagram{background-position: calc(-24px*2) 0;}
+            &.youtube{background-position: calc(-24px*3) 0;}
+            &.telegram{background-position: calc(-24px*4) 0;}
+            &.medium{background-position: calc(-24px*5) 0;}
+            &.linkedin{background-position: calc(-24px*6) 0;}
+          }
+        }
+      }
+    }
+  }
+
+}

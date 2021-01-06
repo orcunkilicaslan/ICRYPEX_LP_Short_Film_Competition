@@ -25,9 +25,9 @@ $var-custom-clr-green:                            $global-clr-green;
 $var-custom-clr-teal:                             $global-clr-teal;
 $var-custom-clr-cyan:                             $global-clr-cyan;
 $var-custom-clr-secondary:                        $global-clr-secondary;
-$var-custom-body-bg:                              $var-custom-clr-black;
+$var-custom-body-bg:                              $global-clr-white;
 $var-custom-body-color:                           $site-clr-text-soft-sec;
-$var-custom-link-color:                           $global-clr-white;
+$var-custom-link-color:                           $site-clr-cyan;
 /* Site Custom Color Variables Settings */
 
 /* Site Custom Common Padding and Border Radius Sizes Settings */
@@ -47,7 +47,7 @@ $var-custom-box-shadow-lg:                        0 1rem 3rem rgba($var-custom-c
 
 /* Site Custom Typography Settings */
 $var-custom-font-family-base:                     $site-font-family-default;
-$var-custom-font-size-base:                       0.75rem; // Assumes the browser default, typically `16px` // https://nekocalc.com/px-to-rem-converter
+$var-custom-font-size-base:                       1rem; // Assumes the browser default, typically `16px` // https://nekocalc.com/px-to-rem-converter
 $var-custom-font-size-xl:                         1.5rem;
 $var-custom-font-size-lg:                         1.125rem;
 $var-custom-font-size-sm:                         0.75rem;
@@ -86,7 +86,7 @@ $var-custom-text-muted:                           $site-clr-text-soft-sec;
 /* Site Custom Button Settings */
 $var-custom-input-btn-font-family:                $site-font-family-default;
 $var-custom-input-btn-line-height:                1.65;
-$var-custom-input-btn-line-height-sm:             1.5;
+$var-custom-input-btn-line-height-sm:             1.75;
 $var-custom-input-btn-line-height-lg:             1.25;
 $var-custom-input-btn-focus-width:                0rem;
 $var-custom-btn-font-weight:                      $var-custom-font-weight-bold;

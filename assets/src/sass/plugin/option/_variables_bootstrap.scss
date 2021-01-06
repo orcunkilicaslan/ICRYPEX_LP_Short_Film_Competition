@@ -4,7 +4,7 @@
 
 /* Bootstrap Grid Columns Settings */
 $bootstrap-grid-columns:          12;
-$bootstrap-grid-gutter-width:     5px;
+$bootstrap-grid-gutter-width:     30px;
 $bootstrap-grid-row-columns:      6;
 $bootstrap-container-max-widths:(
         xs: 480px,
@@ -217,8 +217,8 @@ $bootstrap-input-btn-line-height:       $var-custom-input-btn-line-height;
 $bootstrap-input-btn-focus-width:       $var-custom-input-btn-focus-width;
 $bootstrap-input-btn-focus-color:       rgba($bootstrap-component-active-bg, .25);
 $bootstrap-input-btn-focus-box-shadow:  0 0 0 $bootstrap-input-btn-focus-width $bootstrap-input-btn-focus-color;
-$bootstrap-input-btn-padding-y-sm:      0.19rem;
-$bootstrap-input-btn-padding-x-sm:      0.6rem;
+$bootstrap-input-btn-padding-y-sm:      0.22rem;
+$bootstrap-input-btn-padding-x-sm:      0.75rem;
 $bootstrap-input-btn-font-size-sm:      $bootstrap-font-size-sm;
 $bootstrap-input-btn-line-height-sm:    $var-custom-input-btn-line-height-sm;
 $bootstrap-input-btn-padding-y-lg:      0.5rem;

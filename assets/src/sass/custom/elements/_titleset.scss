@@ -18,9 +18,9 @@
   }
 
   &-xl{
-    h1,h2,h3{@include responsive-font-size(2rem); line-height: 1.2;}
+    h1,h2,h3{@include responsive-font-size(1.875rem); line-height: 1.2;}
     h4,h5,h6{@include responsive-font-size(1.8rem); line-height: 1.2;}
-    p{@include responsive-font-size(1.1rem);}
+    p{@include responsive-font-size(1rem); line-height: 1.8;}
     h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 10px;}
     h4+p,h5+p,h6+p,p+h4,p+h5,p+h6{margin-top: 10px;}
   }
@@ -51,8 +51,8 @@
   }
 
   &-dark{
-    h1,h2,h3,h4,h5,h6{color: $site-clr-text-dark-pri;}
-    p{color: $site-clr-text-dark-sec;}
+    h1,h2,h3,h4,h5,h6{color: $site-clr-text-soft-pri;}
+    p{color: $site-clr-text-soft-sec;}
 
     h1,h2,h3,h4,h5,h6{
       &::before{
@@ -112,5 +112,5 @@
 }
 
 @media print{
-  .sitetitle *{color: $site-clr-text-dark-pri !important;}
+  .sitetitle *{color: $site-clr-text-soft-pri !important;}
 }

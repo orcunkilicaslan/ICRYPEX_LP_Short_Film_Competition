@@ -1,0 +1,79 @@
+
+.header{
+  width: 100%;
+  background-color: transparentize(#2e303c, 0.2);
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  @include box-shadow(0 0 0 0 transparent);
+  @include transition-multiple(background 0.15s ease-in-out, padding 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+
+  &-menubtn{
+    display: none;
+    position: relative;
+
+    &::after{
+      content: "";
+      background-color: darken($site-clr-grylight, 5%);
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -2px;
+      @include border-radius(2px);
+    }
+
+    @include BootstrapMinWidthResponsive(hd){
+      @include flexbox-flex-order(1);
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      display: block;
+    }
+  }
+
+  &-left{
+
+    .headlogo{}
+  }
+
+  &-right{
+
+    .headbtns{
+      text-align: right;
+    }
+  }
+
+  &-navarea{
+
+    .daphne-navbar{
+      @include flexbox-justify-content(center);
+    }
+
+    .mobilebtns{
+      display: none;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        display: block;
+        padding: 15px;
+        border-top: 1px solid darken($site-clr-grylight, 5%);
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .mobilelogo{
+      display: none;
+      padding: 15px;
+      border-bottom: 1px solid darken($site-clr-grylight, 5%);
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &.headscroll{
+    background-color: transparentize(#2e303c, 0.05);
+    padding: 12px 0;
+  }
+}

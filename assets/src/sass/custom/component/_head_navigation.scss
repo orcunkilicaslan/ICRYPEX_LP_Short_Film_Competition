@@ -1,9 +1,9 @@
 
 /* Components Variables Settings */
 $navmenu-mainclass:                     ".daphne";
-$navmenu-clr:                           $site-clr-text-dark-pri;
+$navmenu-clr:                           $site-clr-white;
 $navmenu-clrhover:                      $site-clr-cyan;
-$navmenu-headfontsize:                  1.08rem;
+$navmenu-headfontsize:                  1rem;
 $navmenu-headlineheight:                1;
 $navmenu-headfontweight:                $var-custom-font-weight-bold;
 $navmenu-headborderclr:                 transparent;
@@ -95,12 +95,12 @@ $navmenu-resp-transition:               0.7s cubic-bezier(.77,0,.175,1);
 
     &.navbar-expand-md{
       .nav-link{
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
 
         @include BootstrapMaxWidthResponsive(hd){
-          padding-right: 0.3rem;
-          padding-left: 0.3rem;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem;
         }
       }
     }
@@ -131,7 +131,7 @@ $navmenu-resp-transition:               0.7s cubic-bezier(.77,0,.175,1);
 
       &-link{
         color: $navmenu-clr;
-        padding: 10px 10px 2px;
+        padding: 5px 10px;
         white-space: nowrap;
         @include transition-multiple(color 0.15s ease-in-out);
 

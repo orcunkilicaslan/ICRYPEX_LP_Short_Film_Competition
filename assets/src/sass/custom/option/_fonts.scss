@@ -55,3 +55,17 @@
 }
 
 // https://www.font-converter.net/en
+
+@font-face {
+  font-family: 'Baskerville BT';
+  src: url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.eot'); /* IE9 Compat Modes */
+  src: url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.otf') format('opentype'), /* Open Type Font */
+  url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.svg') format('svg'), /* Legacy iOS */
+  url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.woff') format('woff'), /* Modern Browsers */
+  url('#{$path-fonts-url}/baskerville/BaskervilleBT-Roman.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

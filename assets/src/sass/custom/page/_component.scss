@@ -1,4 +1,116 @@
 
 .component{
 
+  &-formwizard{
+
+    .sitetitle-xl{
+      margin-bottom: 15px;
+    }
+
+    .formwizard{
+      background-color: #edf1f5;
+      min-height: 400px;
+      @include border-radius(6px);
+    }
+  }
+
+  &-awards{
+    background-color: #131933;
+    background-image: url(#{$path-img-url}/section/component_awards_bg.jpg#{$cache-busting});
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    padding: 70px 0;
+
+    .sitetitle-xl{
+      margin-bottom: 60px;
+    }
+
+    .awardslist{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+      color: $site-clr-white;
+      text-align: center;
+
+      > li{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        max-width: 100%;
+        padding: 0 15px;
+      }
+
+      &-icon{
+        @include flexbox-display-flex();
+        @include flexbox-align-items(center);
+        @include flexbox-justify-content(center);
+        background-image: url(#{$path-img-url}/section/component_awards_box.svg#{$cache-busting});
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #B18832;
+        font-family: 'Baskerville BT';
+        @include responsive-font-size(4.25rem);
+        font-style: normal;
+        line-height: 1;
+        text-align: center;
+        width: 155px;
+        height: 135px;
+        margin: 0 auto 10px;
+
+        > span{
+          position: relative;
+          top: -5px;
+        }
+      }
+
+      &-award{
+        @include responsive-font-size(2.5rem);
+        display: block;
+      }
+
+      &-desc{
+        @include responsive-font-size(1.25rem);
+        display: block;
+      }
+
+    }
+  }
+
+  &-jury{
+
+    .sitetitle-xl{
+      margin-bottom: 60px;
+    }
+
+    .jurylist{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+      text-align: center;
+
+      > li{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        max-width: 100%;
+        padding: 0 15px;
+      }
+
+      &-avatar{
+        width: 186px;
+        height: 186px;
+        margin: 0 auto 10px;
+        @include border-radius(50%);
+      }
+
+      &-title{
+        @include responsive-font-size(1.875rem);
+        display: block;
+      }
+
+      &-desc{
+        @include responsive-font-size(1rem);
+        display: block;
+      }
+
+    }
+  }
+
 }
