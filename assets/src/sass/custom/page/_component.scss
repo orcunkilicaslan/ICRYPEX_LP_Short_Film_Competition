@@ -139,11 +139,33 @@
     }
   }
 
+  &-formresult{
+    padding: 70px 0;
+
+    .sitetitle-xl{
+
+      .resulticons{
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 340px;
+        height: 320px;
+        display: block;
+        margin: 20px auto 0;
+        position: relative;
+
+        &.success{background-image: url(#{$path-img-url-icons}/form_result_icon_success.svg#{$cache-busting});}
+        &.error{background-image: url(#{$path-img-url-icons}/form_result_icon_error.svg#{$cache-busting});}
+      }
+    }
+  }
+
   &-awards{
+    @include flexbox-flex(0);
     background-color: #131933;
     background-image: url(#{$path-img-url}/section/component_awards_bg.jpg#{$cache-busting});
     background-repeat: no-repeat;
     background-position: bottom center;
+    background-size: cover;
     background-attachment: fixed;
     padding: 70px 0;
 
@@ -201,6 +223,7 @@
   }
 
   &-jury{
+    @include flexbox-flex(0);
 
     .sitetitle-xl{
       margin-bottom: 60px;

@@ -1,5 +1,6 @@
 
 .footer{
+  @include flexbox-flex(0);
   background-color: #2E313C;
 
   &-copyright{
