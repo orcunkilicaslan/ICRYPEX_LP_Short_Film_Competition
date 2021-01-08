@@ -8,9 +8,134 @@
     }
 
     .formwizard{
-      background-color: #edf1f5;
-      min-height: 400px;
-      @include border-radius(6px);
+
+      &-form{}
+
+      &-steptab{
+        padding: 30px 0;
+
+        .wizardsteptab{
+          @include flexbox-display-flex();
+          @include flexbox-flex-wrap(wrap);
+          border-bottom: 2px solid #E6E8EC;
+
+          > li{
+            @include flexbox-flex-basis(0);
+            @include flexbox-flex-grow(1);
+            max-width: 100%;
+
+            > a{
+              color: $site-clr-text-soft-pri;
+              @include responsive-font-size(1rem);
+              text-align: center;
+              padding: 30px 15px;
+              position: relative;
+              display: block;
+
+              &::before,
+              &::after{
+                content: "";
+                background-color: #E6E8EC;
+                position: absolute;
+                @include transition-multiple(width 0.15s ease-in-out, background 0.15s ease-in-out);
+              }
+
+              &::before{
+                width: 10px;
+                height: 10px;
+                bottom: -11px;
+                left: 50%;
+                @include translateY(-50%);
+                @include border-radius(50%);
+              }
+
+              &::after{
+                width: 0px;
+                height: 2px;
+                left: 0;
+                bottom: -2px;
+              }
+
+              &.active{
+                font-weight: $var-custom-font-weight-bolder;
+
+                &::before{background-color: $site-clr-cyan;}
+                &::after{width: 50%; background-color: $site-clr-cyan;}
+              }
+
+              &.done{
+                font-weight: $var-custom-font-weight-bolder;
+
+                &::before{background-color: $site-clr-cyan;}
+                &::after{width: 100%; background-color: $site-clr-cyan; @include transition-multiple(width 0s ease-in-out);}
+              }
+            }
+          }
+        }
+      }
+
+      &-stepbox{
+        background-color: #edf1f5;
+        min-height: 400px;
+        padding: 30px;
+        @include border-radius(6px);
+
+        .fieldsets{
+
+          fieldset{
+            > .form-row{
+              margin-bottom: 20px;
+
+              &:last-child{margin-bottom: 0;}
+            }
+          }
+
+          .custom-control{
+
+            label{
+              opacity: 0.8;
+              font-weight: $var-custom-font-weight-normal;
+            }
+            input[type="radio"]:checked+label{
+              opacity: 1;
+              font-weight: $var-custom-font-weight-bold;
+            }
+          }
+
+          .colinlinecheckbox{
+            @include flexbox-display-flex();
+            @include flexbox-flex-direction(column);
+
+            .checkboxarea{
+              @include flexbox-display-flex();
+              @include flexbox-align-items(center);
+              //@include flexbox-justify-content(space-between);
+              @include flexbox-flex(1);
+
+              .custom-control-inline{
+                @include flexbox-flex-basis(0);
+                @include flexbox-flex-grow(1);
+                max-width: 100%;
+              }
+            }
+          }
+
+        }
+
+        .actions{
+          @include flexbox-display-flex();
+          @include flexbox-flex-wrap(wrap);
+          @include flexbox-justify-content(space-between);
+          margin-top: 20px;
+
+          > .btn{
+            @include flexbox-flex(0 0 auto);
+            max-width: 100%;
+            min-width: 180px;
+          }
+        }
+
+      }
     }
   }
 

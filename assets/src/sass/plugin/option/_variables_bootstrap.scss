@@ -285,7 +285,7 @@ $bootstrap-input-focus-border-color:              $var-custom-input-focus-border
 $bootstrap-input-focus-color:                     $bootstrap-input-color;
 $bootstrap-input-focus-width:                     $bootstrap-input-btn-focus-width;
 $bootstrap-input-focus-box-shadow:                $bootstrap-input-btn-focus-box-shadow;
-$bootstrap-input-placeholder-color:               $var-custom-input-color;
+$bootstrap-input-placeholder-color:               transparentize($var-custom-input-color, 0.5);
 $bootstrap-input-plaintext-color:                 $bootstrap-body-color;
 $bootstrap-input-height-border:                   $bootstrap-input-border-width * 2;
 //$bootstrap-input-height-inner:                    add($bootstrap-input-line-height * 1em, $bootstrap-input-padding-y * 2);
@@ -301,7 +301,7 @@ $bootstrap-form-check-input-margin-y:             .3rem;
 $bootstrap-form-check-input-margin-x:             .25rem;
 $bootstrap-form-check-inline-margin-x:            .75rem;
 $bootstrap-form-check-inline-input-margin-x:      .3125rem;
-$bootstrap-form-grid-gutter-width:                5px;
+$bootstrap-form-grid-gutter-width:                20px;
 $bootstrap-form-group-margin-bottom:              0.5rem;
 $bootstrap-input-group-addon-color:               $var-custom-input-group-addon-color;
 $bootstrap-input-group-addon-bg:                  $var-custom-input-bg;

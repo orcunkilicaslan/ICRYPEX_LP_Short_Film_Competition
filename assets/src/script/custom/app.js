@@ -40,3 +40,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 });
 /* Count Down Date */
+
+/* Wizard */
+
+/* Wizard */

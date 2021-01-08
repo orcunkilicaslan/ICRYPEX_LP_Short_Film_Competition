@@ -131,7 +131,115 @@
 
         <!-- Wizard -->
         <div class="formwizard">
-
+            <form class="formwizard-form siteformui" autocomplete="off" novalidate>
+                <div class="formwizard-steptab">
+                    <ul class="wizardsteptab">
+                        <li><a class="active" href="#step01">Film Bilgileri</a></li>
+                        <li><a href="#step02">Yönetmen Bilgileri</a></li>
+                        <li><a href="#step03">Film Künyesi</a></li>
+                        <li><a href="#step04">Başvuru Bilgileri</a></li>
+                    </ul>
+                </div>
+                <div class="formwizard-stepbox">
+                    <div class="fieldsets">
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group col-lg-4">
+                                    <label>Filmin Adı</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Lütfen boş alanları doldurun" value="" />
+                                </div>
+                                <div class="form-group colinlinecheckbox col-lg-8">
+                                    <label>Filmin Türü</label>
+                                    <div class="checkboxarea">
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="filturu_kurmaca" class="custom-control-input" type="radio" name="filmturu" value="Kurmaca" />
+                                            <label for="filturu_kurmaca" class="custom-control-label">Kurmaca</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="filturu_belgesel" class="custom-control-input" type="radio" name="filmturu" value="Belgesel" />
+                                            <label for="filturu_belgesel" class="custom-control-label">Belgesel</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="filturu_canlandirma" class="custom-control-input" type="radio" name="filmturu" value="Canlandırma" />
+                                            <label for="filturu_canlandirma" class="custom-control-label">Canlandırma</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="filturu_deneysel" class="custom-control-input" type="radio" name="filmturu" value="Deneysel" />
+                                            <label for="filturu_deneysel" class="custom-control-label">Deneysel</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-4">
+                                    <label>Filmin Süresi</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Lütfen boş alanları doldurun" value="" />
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Filmin Yapım Yılı</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Lütfen boş alanları doldurun" value="" />
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Filmin Yapım Yılı</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Lütfen boş alanları doldurun" value="" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group colinlinecheckbox col-lg-4">
+                                    <label>Orijinal Renk</label>
+                                    <div class="checkboxarea">
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="renk_renkli" class="custom-control-input" type="radio" name="orijinalrenk" value="Renkli" />
+                                            <label for="renk_renkli" class="custom-control-label">Renkli</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="renk_siyahbeyaz" class="custom-control-input" type="radio" name="orijinalrenk" value="Siyah / Beyaz" />
+                                            <label for="renk_siyahbeyaz" class="custom-control-label">Siyah / Beyaz</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group colinlinecheckbox col-lg-8">
+                                    <label>Orijinal Format</label>
+                                    <div class="checkboxarea">
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="format_35" class="custom-control-input" type="radio" name="orijinalformat" value="35mm" />
+                                            <label for="format_35" class="custom-control-label">35mm</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="format_16" class="custom-control-input" type="radio" name="orijinalformat" value="16mm" />
+                                            <label for="format_16" class="custom-control-label">16mm</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="format_8" class="custom-control-input" type="radio" name="orijinalformat" value="8mm" />
+                                            <label for="format_8" class="custom-control-label">8mm</label>
+                                        </div>
+                                        <div class="custom-control checkbox-lg custom-radio custom-control-inline">
+                                            <input id="format_hd" class="custom-control-input" type="radio" name="orijinalformat" value="HD" />
+                                            <label for="format_hd" class="custom-control-label">HD</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="exampleSoftLargeTextareaDefault">Filmin Kısa Öyküsü </label>
+                                    <textarea id="exampleSoftLargeTextareaDefault" class="form-control form-control-lg" rows="3" placeholder="Lütfen boş alanları doldurun"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label>Filmin Youtube Linki</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Lütfen boş alanları doldurun" value="" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-lg btn-secondary" type="button">GERİ</button>
+                        <button class="btn btn-lg btn-success" type="button">İLERİ</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <!-- Wizard -->
 
