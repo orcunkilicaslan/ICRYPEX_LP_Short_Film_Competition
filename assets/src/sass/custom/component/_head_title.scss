@@ -112,4 +112,17 @@
     }
   }
 
+  &-terms{
+    @include background-linear(#616e76, #2a2f35, 0, 50%, 50%);
+
+    .headtermsbg{
+      background-color: transparent;
+      background-image: url(#{$path-img-url}/slider/head_slider_bg_terms.jpg#{$cache-busting});
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 380px;
+      padding-top: 60px;
+    }
+  }
+
 }

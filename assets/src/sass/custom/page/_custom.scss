@@ -7,8 +7,6 @@
 }
 
 ul.ullist{
-  color: $site-clr-text-dark-sec;
-  @include responsive-font-size(1.1rem);
 
   li{
     position: relative;
@@ -48,3 +46,48 @@ ul.ullist{
     }
   }
 }
+
+ol.olbulletmark{
+  counter-reset: item;
+
+  > li{
+    padding-left: 40px;
+    position: relative;
+
+    &::before {
+      content: counters(item, ".") " ";
+      counter-increment: item;
+      font-weight: $var-custom-font-weight-bold;
+      text-align: right;
+      width: 15px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after{
+      content: "";
+      background-color: $site-clr-cyan;
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      left: 25px;
+      top: 13px;
+      @include border-radius(50%);
+    }
+
+    > ol{
+      margin-left: 15px;
+      list-style-type: lower-alpha;
+
+      > li{
+        padding-left: 0;
+
+        &::marker{
+          font-weight: $var-custom-font-weight-bold;
+        }
+      }
+    }
+  }
+}
+

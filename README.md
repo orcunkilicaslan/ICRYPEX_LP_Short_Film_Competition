@@ -5,6 +5,7 @@
 - [Form_Result_Success](https://orcunkilicaslan.github.io/ICRYPEX_LP_Short_Film_Competition/html/Form_Result_Success.html)
 - [Form_Result_Error](https://orcunkilicaslan.github.io/ICRYPEX_LP_Short_Film_Competition/html/Form_Result_Error.html)
 - [About_Us](https://orcunkilicaslan.github.io/ICRYPEX_LP_Short_Film_Competition/html/About_Us.html)
+- [Terms](https://orcunkilicaslan.github.io/ICRYPEX_LP_Short_Film_Competition/html/Terms.html)
    
 
 # NodeJS Kurulumu
