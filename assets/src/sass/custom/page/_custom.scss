@@ -1,3 +1,11 @@
+.section{
+
+  &-cont{
+    padding: 80px 0 100px;
+  }
+
+}
+
 ul.ullist{
   color: $site-clr-text-dark-sec;
   @include responsive-font-size(1.1rem);
