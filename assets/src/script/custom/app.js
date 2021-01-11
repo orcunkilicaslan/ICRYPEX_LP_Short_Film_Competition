@@ -20,7 +20,7 @@ $(document).on('click', '.smoothscroll[data-target]', function(e){
 });
 /* Smooth Scroll to Div */
 
-/* Wizard New */
+/* Wizard - https://codepen.io/atulkumarsingh/pen/LYPaQwg */
 $(document).ready(function() {
 
     // Click Next Button
@@ -141,7 +141,7 @@ $(document).ready(function() {
     });
 
 });
-/* Wizard New */
+/* Wizard */
 
 /* Input Mask */
 $(document).ready(function(){
