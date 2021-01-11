@@ -1,5 +1,17 @@
 
 /* Smooth Scroll to Div */
+$(document).ready(function() {
+    $("html, body").animate({scrollTop: 0}, 0);
+    setTimeout(function() {
+        if (window.location.hash) {
+            var hash = window.location.hash;
+            $('html, body').animate({
+                scrollTop :  $(hash).offset().top
+            }, 1500);
+        }
+    }, 25);
+});
+
 $(document).on('click', '.smoothscroll[data-target]', function(e){
     e.preventDefault();
 
@@ -9,7 +21,7 @@ $(document).on('click', '.smoothscroll[data-target]', function(e){
 
     if ($target.length === 0) {
         //console.log('sayfayok');
-        window.location.href = href;
+        window.location.href = href + target;
         //return;
     }else{
         //console.log('sayfavar');
