@@ -84,6 +84,10 @@
             display: block;
           }
 
+          &:first-child{
+            .wizard-btn-prev{opacity: 0;}
+          }
+
           &-forms{
             > .form-row{
               margin-bottom: 20px;
