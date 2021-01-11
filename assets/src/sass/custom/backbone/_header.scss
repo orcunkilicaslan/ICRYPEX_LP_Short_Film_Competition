@@ -10,6 +10,10 @@
   @include box-shadow(0 0 0 0 transparent);
   @include transition-multiple(background 0.15s ease-in-out, padding 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
 
+  > div[class*="container"] > .row{
+    @include flexbox-align-items(center);
+  }
+
   &-menubtn{
     display: none;
     position: relative;
@@ -28,7 +32,7 @@
     @include BootstrapMinWidthResponsive(hd){
       @include flexbox-flex-order(1);
     }
-    @include BootstrapMaxWidthResponsive(lg){
+    @include BootstrapMaxWidthResponsive(md){
       display: block;
     }
   }
@@ -54,7 +58,7 @@
     .mobilebtns{
       display: none;
 
-      @include BootstrapMaxWidthResponsive(lg){
+      @include BootstrapMaxWidthResponsive(md){
         display: block;
         padding: 15px;
         border-top: 1px solid darken($site-clr-grylight, 5%);

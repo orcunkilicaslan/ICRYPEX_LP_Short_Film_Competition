@@ -9,6 +9,15 @@
     padding-bottom: 40px;
     text-align: center;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
+
     .footlogo{
       margin-bottom: 20px;
     }
@@ -22,6 +31,10 @@
   &-navigasyon{
     background-color: #24262F;
     padding: 5px 0;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 0;
+    }
 
     .navbar{
       @include flexbox-justify-content(center);
@@ -37,6 +50,15 @@
     padding-top: 40px;
     padding-bottom: 80px;
     text-align: center;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 25px;
+      padding-bottom: 40px;
+    }
 
     .footaddr{
       @include responsive-font-size(1rem);

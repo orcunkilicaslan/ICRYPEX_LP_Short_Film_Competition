@@ -3,6 +3,19 @@
 
   &-welcome{
     padding-top: 80px;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 50px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 40px;
+    }
+
+    .sitetitle-xl{
+      @include BootstrapMaxWidthResponsive(lg){
+        text-align: center;
+      }
+    }
   }
 
 }

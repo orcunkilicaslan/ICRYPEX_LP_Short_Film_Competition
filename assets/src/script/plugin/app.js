@@ -1,6 +1,6 @@
 /* Header Web Navbar Fixed */
 $(document).ready(function() {
-    if($(window).width() > 1059){}
+    if($(window).width() > 819){}
 
     $(window).on("load resize scroll",function(e){
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $('body').addClass('daphne-navbody');
 
     // Desktop or Mobile Menu Overlay
-    if($(window).width() < 1060){
+    if($(window).width() < 820){
         $('.daphne-mobile').click(function () {
             $('.daphne-navbody').toggleClass('daphne-moverlay');
         });

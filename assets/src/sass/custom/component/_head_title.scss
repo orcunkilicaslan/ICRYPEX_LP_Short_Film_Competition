@@ -12,11 +12,29 @@
       background-image: url(#{$path-img-url}/slider/head_slider_bg_home.jpg#{$cache-busting});
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: cover;
       height: 500px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 400px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        height: 340px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        height: 360px;
+      }
 
       > .container{
         height: 100%;
         padding: 60px 0;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          padding: 40px 0;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding: 40px 0;
+        }
       }
     }
 
@@ -27,12 +45,24 @@
       height: 100%;
       padding-left: 52%;
 
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-left: 50%;
+      }
+
       &-slogan{
         color: $site-clr-white;
         @include responsive-font-size(1.5rem);
 
+        @include BootstrapMaxWidthResponsive(hd){
+          @include responsive-font-size(1.25rem);
+        }
+
         h1{
           @include responsive-font-size(2.5rem);
+
+          @include BootstrapMaxWidthResponsive(hd){
+            @include responsive-font-size(2.2rem);
+          }
         }
       }
 
@@ -107,8 +137,16 @@
       background-image: url(#{$path-img-url}/slider/head_slider_bg_aboutus.jpg#{$cache-busting});
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: cover;
       height: 380px;
       padding-top: 60px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 340px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 280px;
+      }
     }
   }
 
@@ -120,8 +158,16 @@
       background-image: url(#{$path-img-url}/slider/head_slider_bg_terms.jpg#{$cache-busting});
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: cover;
       height: 380px;
       padding-top: 60px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 340px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 280px;
+      }
     }
   }
 
